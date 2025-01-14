@@ -1,0 +1,14 @@
+html{
+  font-size: 62.5%;
+}
+body{
+  margin: 0;
+  background: linear-gradient(264deg, #50006ded, #14144c);
+  color:#fff;
+  overflow-x: hidden; 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
