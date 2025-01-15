@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import emailjs from '@emailjs/browser'
 
 const Contact = ()=>{
@@ -12,7 +12,8 @@ const Contact = ()=>{
         emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY )
         .then((result)=>{
             console.log(result.text);
-            
+            alert("your message submit successfully")
+            form.current.reset()
         },(error)=>{
         console.log(error.text);
         
@@ -49,9 +50,9 @@ const Contact = ()=>{
         </div>
         <div className="message-form">
         <form className="flex gap-5 flex-col w-full" onSubmit={sendEmail} ref={form}>
-            <input className="name" type="text" name="name" placeholder="Name" />
-            <input className="email" type="email" name="email" placeholder="Email" />
-            <textarea className="message" name="message" placeholder="Message" />
+            <input className="name" type="text" name="name" placeholder="Name" required/>
+            <input className="email" type="email" name="email" placeholder="Email" required/>
+            <textarea className="message" name="message" placeholder="Message" required/>
             <button className="send btn btn-lg btn-outline-primary ">Send Message</button>
         </form>
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import TextShpere from "./Wheel";
 
 const Home = () =>{
     return(
@@ -11,7 +12,7 @@ const Home = () =>{
         <p>Lokhande</p>
       </div>
       <div className="Myintro">
-        <img src="image/rb_3315.png" alt="" className="vector1"/>
+      <TextShpere className="vector1"/>
       </div>
       </div>
       </div>
