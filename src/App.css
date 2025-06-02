@@ -1,0 +1,806 @@
+
+html{
+  font-size: 62.5%;
+}
+body{
+  margin: 0;
+  background: linear-gradient(264deg, #50006ded, #14144c);
+  color:#fff;
+  overflow-x: hidden; 
+}
+
+.divnav{
+  position: fixed;
+    padding: 0 17rem;
+    width: auto;
+    z-index: 1;
+    margin: -5rem auto;
+}
+.navbar{
+  background: linear-gradient(44deg, #b7b7b76b, #585757c9);
+  backdrop-filter: blur(5px);
+  display: flex;
+  overflow: hidden;
+  border-radius: 1rem;
+  align-items: flex-start;
+  height: 10rem;
+  justify-content: unset;
+}
+.navbar li{
+  list-style: none;
+  padding: 3rem;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);   
+  font-weight: 500;
+  border-radius: 1rem;
+  transition: all 1s;
+  right: 10rem;
+}
+.navbar li:hover{
+  background-color: grey;
+  color: white;
+  
+}
+.navbar a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: all 1s;
+}
+.navbar a:hover{
+  background-color: grey;
+  color: rgb(0, 0, 0); 
+}
+
+.line3.active .top-line{
+  transform: translateY(2px) rotate(-45deg);
+  y: 5;
+}
+
+.line3.active .mid-line{
+  opacity: 0;
+}
+
+.line3.active .bottom-line{
+  transform: translateY(0) rotate(-135deg);
+  y:5;
+}
+
+.line3>rect{
+  -webkit-transition: all 0.3s ease-in-out, opacity 0.2s linear 0.1s;
+    transition: all 0.3s ease-in-out, opacity 0.2s linear 0.1s;
+    transform-origin: 50% 50%;
+}
+
+
+.res-nav-bar{
+  width: 50%;
+    height: 40%;
+    position: fixed;
+    top: 10rem;
+    z-index: 1;
+    background: #000000cc;
+    color: rgb(61, 79, 88);
+    font-size: 3rem;
+    font-weight: 600;
+    border-radius: 2rem;
+
+}
+
+.res-nav-bar ul{
+  list-style: none;
+  display: grid;
+  gap: 3rem;
+    padding: 5rem 8rem;
+}
+.res-nav-bar ul li a{
+  color: rgb(179 179 179);
+  text-decoration: none;
+}
+
+.divimg{
+  height: 10rem;
+  width: 10rem;
+  margin: -1.5rem 0 0 5rem;
+  border-radius: 50%;
+  background: linear-gradient(104.81deg,#45e850 -24.72%,#33d2ff 41.05%,#dd5789 62.78%) ;
+  backdrop-filter: brightness(0.5);
+  /* transition: all ,10s; */
+  
+}
+.myimg{
+  clip-path: circle(50% at 50% 50%);
+  height: 9rem;
+  width: 9rem;
+  margin: .5rem;
+}
+
+.myname{
+ margin-left: 17rem; 
+ margin-top: -6.5rem;
+ width: auto;
+ z-index: 2;
+ position:relative ;
+}
+
+.home{
+  margin-top: 5rem ;
+  padding: 10rem 0rem;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.hey_iam{
+  margin: auto 15%;
+  width: 50%;
+  font-size: 3rem;
+  font-weight: 300;
+  font-style: normal;
+  overflow: hidden;
+/* border-right: .15em solid orange;  */
+white-space: nowrap; 
+/* margin: 0 auto;  */
+animation: 
+  typing1 7s steps(40, end)  infinite,
+  blink-caret1 .75s step-end infinite;
+}
+
+/* @keyframes typing1 {
+  from { width: 0}
+  to { width: 8% ; visibility: visible;}
+}
+
+@keyframes blink-caret1 {
+  from, to { border-color: transparent}
+  50%{right: 0; top: 5rem; border-color: orange;}
+} */
+
+.my_detail{
+  display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      width: auto;
+      margin: auto;
+      padding: 0 10rem
+}
+
+.myName , .Myintro{
+  margin: auto; 
+}
+
+.myName p {
+  border-right: .08em solid rgb(136, 135, 133);
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 7rem 0 0 0rem;
+  font-weight: 700;
+  /* max-height: 94rem; */
+  font-size: 9.6rem;
+  line-height: 12rem;
+  background: linear-gradient(104.81deg,#45e850 0.28%,#33d2ff 41.05%,#dd5789 59.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.myName p:nth-child(1) {
+  width: 4em;
+  opacity: 0;
+  -webkit-animation: type2 2s steps(40, end);
+  animation: type2 2s steps(40, end);
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+}
+
+.myName p:nth-child(2) {
+  margin-top: 0;
+  width: 4.6em;
+  opacity: 0;
+  -webkit-animation: type3 2s steps(40, end) 2.5s, blink .5s step-end 4.5s infinite alternate;
+  animation: type3 2s steps(40, end) 2.5s, blink .5s step-end 4.5s infinite alternate;
+  /* -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s; */
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .08em solid rgb(136, 135, 133);
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .08em solid rgb(136, 135, 133);
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+
+.vector1{
+  width: 45rem;
+}
+
+.Aboutme{
+  margin: 5rem 0 0 0rem;
+  padding: 10rem 5rem;
+  display: grid;
+  text-align: center;
+}
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5rem;
+  word-break: break-all;
+  animation-name: mystyleresume;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  height: 5rem;
+  background: #f79408;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.divaboutme{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.paraboutme p{
+  display: inline-block;
+  width: auto;
+  padding: 2rem 5rem;
+  word-spacing: 1rem;
+  text-align: justify;
+  font-weight: 300;
+  line-height: 3.5rem;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 3rem;
+  animation: typingp1 10s steps(400, end);
+  animation-play-state: paused;
+  
+}
+
+
+.moreaboutme{
+  color: #ffffff;
+  font-size: 2rem;
+  border-radius: 3rem;
+  padding: 1rem 2rem;
+}
+
+.myskill{
+  text-align: center;
+  font-size: 3rem;
+  padding: 5rem 0;
+}
+
+.progress-div{
+  gap: 10rem;
+    display: grid;
+    padding: 5rem 15rem;
+    margin: auto;
+}
+
+.col-1{
+  width: auto;
+  display: flex;
+  gap: 10rem;
+  flex-wrap: wrap;
+  padding: 0 11rem;
+}
+
+  .inner{
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  align-items: center;
+  display: grid;
+  padding: 1rem 1.5rem;
+  background: conic-gradient(#7d7b7b,#7d7b7b 0);
+  }
+  
+  
+  .outer{
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: grid;
+  align-items: center;
+  padding: 1.5rem;
+  background: #353535;
+  }
+  
+  .outer3{
+      width: 10rem;
+      font-size: 1rem;
+      color: rgb(0, 255, 34);
+      display: grid;
+      padding: 1rem;
+      text-align: center;
+      position: absolute;
+      margin: 0 -2rem;
+  }
+  
+  .outer1{
+      box-sizing: border-box;
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  background: gray;
+  position: relative;
+  border-top: .1rem solid white;
+  display: grid;
+  align-items: center;
+  }
+  
+  .outer2{
+      box-sizing: border-box;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background: rgb(87, 87, 87);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  border-top: 2px solid #000000;
+  border-bottom: 1px solid white;
+  padding: 3rem;
+  display: grid;
+  left: 1.5rem;
+  }
+
+.projects{
+  margin: 5rem 0 0 0rem;
+  padding: 10rem 0 0 0;
+}
+
+.projects .section{
+  min-height: 50rem;
+  background: #00000094;
+  margin: 5rem 10rem;
+  border-radius: 1rem;
+}
+
+.projects .section .panel_1{
+  padding: 3rem;
+  font-size: 2rem;
+}
+
+.panel_1 h1{
+  color: #ffc107;
+}
+
+.panel_1 .visit{
+  font-size: 1.5rem;
+    width: auto;
+    margin: auto;
+}
+
+.Services{
+  margin: 5rem 0 0 0rem;
+  padding: 10rem 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.serviceCardDiv{
+  margin: auto;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    padding: 0 15rem;
+}
+
+
+.cardOuter{
+  margin-top: 5rem ;
+  height: 31rem;
+  width: 35rem;
+  padding: .5rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+
+.cardOuter::before{
+  content: " ";
+  display: block;
+  height: 50rem;
+  width: 50rem;
+  background: linear-gradient(90deg, #3acfd5 0%, #3a4ed5 100%);
+  animation: cardborder 2s  infinite alternate-reverse ;
+  z-index: 0;
+  position: absolute;
+}
+.serviceCard{
+  height: 30rem;
+  width: 35rem;
+  background: #000;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  scale: 1;
+  transition: scale 1s;
+  visibility: visible;
+  overflow: hidden;
+  
+}
+
+@keyframes cardborder {
+  0%{
+      transform: rotate(0);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+.serviceCard .detail .ser-name{
+  color: rgb(135 80 238);
+  font-weight: 800;
+}
+
+.serviceCard .detail p{
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  color: #9f9b9b;
+}
+
+.contact{
+  margin: 5rem 0 0 0rem;
+  padding: 10rem 0 0 0;
+}
+
+.contact .para{
+  padding: 1rem 5rem;
+    font-size: 2rem;
+    color: #919191;
+    text-align: center;
+}
+
+.contact_me{
+  width: auto;
+    display: flex;
+    gap: 10rem;
+    margin: auto;
+    padding: 5rem 10rem;
+    flex-wrap: wrap;
+}
+
+.contact .contact_detail{
+  font-size: 2rem;
+  line-height: 5rem;
+  margin: 0 auto;
+}
+
+.contact .bi{
+  height: 2rem;
+    width: 2rem;
+    stroke: #ffc107;
+}
+
+.contact .message-form{
+    margin: auto;
+}
+
+.contact form{
+  display: grid;
+    font-size: 2rem;
+    position: relative;
+}
+
+.contact .name ,.email ,.message{
+  background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid orange;
+    color: #fff;
+}
+
+.contact .send{
+  width: 35%;
+  margin-left: 30rem;
+  font-size: 2rem;
+  --bs-btn-color: #ffc107;
+    --bs-btn-border-color: #ffc107;
+    --bs-btn-hover-bg: #ffc107;
+    --bs-btn-hover-border-color: #ffc107;
+    --bs-btn-active-bg: #ffc107;
+}
+
+.footer{
+  position: relative;
+  bottom: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer .copyright{
+  padding: 1rem 10rem;
+  text-align: center;
+  color: rgb(169, 169, 168);
+  margin: auto;
+}
+
+.footer .icon{
+  position: relative;
+  width: auto;
+  display: flex;
+  padding: 0 10rem;
+    text-align-last: right;
+    margin: auto;
+}
+
+.footer .icon svg{
+  height: 5rem;
+}
+
+.footer .icon a{
+  padding: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .git-icon:hover{
+  cursor: pointer;
+  fill: #fff;
+}
+.footer .git-icon:hover path{
+  stroke: #000;
+}
+
+.footer .link-icon:hover{
+  cursor: pointer;
+  fill: #fff;
+}
+.footer .link-icon:hover path{
+  stroke: #0040f1;
+}
+.footer .insta-icon:hover{
+  cursor: pointer;
+  fill: #fff;
+}
+.footer .insta-icon:hover path{
+  fill: #ff3377;
+}
+.footer .x-icon:hover{
+  cursor: pointer;
+  fill: #fff;
+}
+.footer .x-icon:hover path{
+  fill: #000;
+}
+
+@media screen and (max-width: 320px){
+  html{
+    font-size: 30%;
+  }
+  .serviceCardDiv{
+    padding: 0 5rem;
+  }
+  .cardOuter::before{
+    height: 65rem;
+    width: 65rem;
+  }
+  .cardOuter{width: auto;
+  height: auto;}
+  .serviceCard{width: auto;
+  height: 20rem;}
+
+  .projects .section{
+    margin: 5rem;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-width: 321px) {
+  html{
+    font-size: 35%;
+  }
+  .serviceCardDiv{
+    padding: 0 5rem;
+  }
+  .cardOuter::before{
+    height: 65rem;
+    width: 65rem;
+  }
+  .cardOuter{width: auto;
+  height: auto;}
+  .serviceCard{width: auto;
+  height: 20rem;}
+
+  .projects .section{
+    margin: 5rem;
+  }
+
+}
+
+
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  html{
+    font-size: 40%;
+  }
+  .serviceCardDiv{
+    padding: 0 5rem;
+  }
+  .cardOuter::before{
+    height: 65rem;
+    width: 65rem;
+  }
+  .cardOuter{width: auto;
+  height: auto;}
+  .serviceCard{width: auto;
+  height: 20rem;}
+
+  .projects .section{
+    margin: 5rem;
+  }
+
+}
+
+@media screen and (max-width : 550px) and (min-width:426px) {
+  html{
+    font-size: 32%;
+  }
+  .serviceCardDiv{
+    padding: 0 5rem;
+  }
+  .cardOuter::before{
+    height: 65rem;
+    width: 65rem;
+  }
+  .cardOuter{width: auto;
+  height: auto;}
+  .serviceCard{width: auto;
+  height: 20rem;}
+
+  .projects .section{
+    margin: 5rem;
+  }
+
+}
+
+@media screen and (max-width : 768px) and (min-width:551px) {
+  html{
+    font-size: 32%;
+  }
+  .serviceCardDiv{
+    padding: 0 5rem;
+  }
+  .cardOuter::before{
+    height: 65rem;
+    width: 65rem;
+  }
+  .cardOuter{width: auto;
+  height: auto;}
+  .serviceCard{width: auto;
+  height: 20rem;}
+
+  .projects .section{
+    margin: 5rem;
+  }
+}
+
+@media screen and (max-width : 1024px) and (min-width:769px) {
+
+  html{
+    font-size: 45%;
+  }
+
+}
+
+
+@media screen and (max-width : 2560px) and (min-width:1441px) {
+
+  html{
+    font-size: 110%;
+  }
+
+
+}
+
+
+/* Importing google font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
+
+.text-shpere {
+    position: relative;
+    top: 0;
+    width: 80%;
+    height: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.tagcloud {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 1.3em;
+}
+
+/* Change color of each text in sphere on hover   */
+.tagcloud--item {
+    color: #00ffffff;
+    text-transform: uppercase;
+}
+
+.tagcloud--item:hover {
+    color: #ff6347;
+}
+           
