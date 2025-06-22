@@ -18,7 +18,7 @@ const Project = () => {
                             <li>Real-time messaging and chat functionality</li>
                             <li>Scalable and secure architecture</li>
                             </ul>
-                            <a href="https://saychats.netlify.app/" className="visit btn btn-lg btn-outline-primary" color="none">visit my project</a>
+                            <a href="https://webchat-phi-dusky.vercel.app/" className="visit btn btn-lg btn-outline-primary" color="none">visit my project</a>
                         </p>
                         <h1>Alabay</h1>
                         <p className="d-grid">
@@ -42,7 +42,7 @@ const Project = () => {
                                 <li>Intuitive Interface: User-friendly dashboard designed for effortless navigation and minimal administrative hassle.</li>
                                 <li>Scalable Infrastructure: Built using cutting-edge technologies to ensure high performance, flexibility, and reliabil.</li>
                             </ul>
-                            <a href="https://ecommadmindashboard.netlify.app/" className="visit btn btn-lg btn-outline-primary">visit my project</a>
+                            <a href="https://ecommdashboard.vercel.app/" className="visit btn btn-lg btn-outline-primary">visit my project</a>
                         </p>
                     </div>
                     <div className="panel_2"></div>
